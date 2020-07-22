@@ -1,12 +1,14 @@
 
-body{
+html,body{
     margin: 0;
+    height: 100%;
+    
 }
 @media screen and (max-width:600px){
     .language {
         display: none;
     }
-    
+
 }
 
 ul {
@@ -19,6 +21,9 @@ a{
 .text-white{
     color:white;
 }
+.mb-5 {
+    margin-bottom: 5em !important;
+}
 #header{
     position: fixed;
     top:0;
@@ -26,6 +31,7 @@ a{
     right:0;
     background-color: transparent; 
     box-shadow: 0 1px 2px 0 rgba(92, 85, 85, 0.6);   
+    z-index: 10;
     .title{
         display: flex;
         flex-wrap: wrap;
@@ -118,13 +124,16 @@ a{
     }
 }
 
-#main {
+#section1 {
+    max-width: 100%;
+    position: relative;
     background-image: linear-gradient(115deg,rgba(240, 248, 255, 0.1),rgba(30, 31, 38, 0.7)),url(./assets/remy_loz-3vVzdb8KKIw-unsplash.jpg);
     padding-top: 232px;
     background-position: center;
     background-size: cover;
     background-repeat: repeat;
     text-align: center;   
+    box-shadow: 0 1px 2px 0 rgba(92, 85, 85, 0.6);
     .title h2{
         font-size: 2.6em;
         color: white;
@@ -142,8 +151,31 @@ a{
         color: white;
         text-align: inherit;
         line-height: 30px;
-        margin: 30px 20%;
+        margin: 30px 20% 0px;
         font-weight: 400;
+        padding-bottom: 30px;
     }
     
+}
+#section2{
+    max-width: 100%;
+    background-color: wheat;
+    //background-image: linear-gradient(115deg,rgba(240, 248, 255, 0.1),rgba(30, 31, 38, 0.7)),url(./assets/remy_loz-3vVzdb8KKIw-unsplash.jpg);
+    position: relative;
+    height: 500px;
+    z-index: -1;
+    text-align: center;
+    .bg-2 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: auto;
+        background-image: linear-gradient(115deg,rgba(240, 248, 255, 0.1),rgba(30, 31, 38, 0.7)),url(./assets/remy_loz-3vVzdb8KKIw-unsplash.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: repeat;
+        z-index: 9;
+        height: 700px;
+        width: 100%;
+    }
 }
