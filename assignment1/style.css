@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .language {
+    display: none;
+  }
+}
+
+ul {
+  list-style-type: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-white {
+  color: white;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(92, 85, 85, 0.6);
+          box-shadow: 0 1px 2px 0 rgba(92, 85, 85, 0.6);
+}
+
+#header .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 10%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#header .logo {
+  margin: 10px 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#header .logo img {
+  max-width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+#header .language {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 30px;
+}
+
+#header .language > ul {
+  display: inline;
+  position: relative;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+#header .language ul li {
+  display: inline-block;
+  border: 1px solid white;
+  width: 109px;
+  padding: 5px 0 5px 10px;
+}
+
+#header .language ul li ul {
+  display: none;
+  top: 23px;
+  left: 0;
+  border-top: 1px solid rgba(17, 17, 17, 0.8);
+  position: absolute;
+}
+
+#header .language ul ul li {
+  background-color: white;
+}
+
+#header .language ul ul li:hover {
+  background-color: transparent;
+}
+
+#header .language ul:hover li ul {
+  display: block;
+}
+
+#header .language ul:hover li ul a {
+  color: black;
+}
+
+#header .language ul:hover > li {
+  background-color: white;
+}
+
+#header .language ul:hover > li a {
+  color: black;
+}
+
+#header .menu {
+  position: absolute;
+  color: white;
+  top: 20px;
+  right: 40px;
+  font-size: x-large;
+}
+
+#header .tooltiptext {
+  display: none;
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  margin-left: -50px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  text-align: center;
+  padding: 5px 0;
+  width: 100px;
+}
+
+#header .menu:hover .tooltiptext {
+  display: block;
+}
+
+#main {
+  background-image: linear-gradient(115deg, rgba(240, 248, 255, 0.1), rgba(30, 31, 38, 0.7)), url(./assets/remy_loz-3vVzdb8KKIw-unsplash.jpg);
+  padding-top: 232px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  text-align: center;
+}
+
+#main .title h2 {
+  font-size: 2.6em;
+  color: white;
+  margin: 20px 10%;
+  text-shadow: 0px -1px black, 1px 0px black, 0px 1px black, -1px 0px black;
+}
+
+#main p:first-child {
+  font-size: 1.75em;
+  color: white;
+  font-weight: 500;
+  margin: 0 10%;
+}
+
+#main p:last-child {
+  font-size: 20px;
+  color: white;
+  text-align: inherit;
+  line-height: 30px;
+  margin: 30px 20%;
+  font-weight: 400;
+}
+/*# sourceMappingURL=style.css.map */
